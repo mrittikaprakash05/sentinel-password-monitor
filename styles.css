@@ -1,0 +1,54 @@
+#pwn-warning-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 0, 0, 0.9); /* Dark Red Tint */
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    backdrop-filter: blur(5px);
+}
+
+.pwn-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 5px solid #d32f2f;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.5);
+}
+
+.pwn-box h2 {
+    color: #d32f2f;
+    margin-top: 0;
+}
+
+.pwn-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#pwn-change {
+    background-color: #388e3c;
+    color: white;
+}
+
+#pwn-ignore {
+    background-color: #ddd;
+    color: #333;
+}
