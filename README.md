@@ -38,8 +38,6 @@ Since this is a portfolio project, you can install it manually:
 5.  Select the folder containing `manifest.json`.
 6.  Go to any login page and type `password123` to test the warning!
 
-## 📸 Screenshots
-*(Add your screenshots here - see instructions below)*
 
 ## 📄 License
 This project is open source and available under the [MIT License](LICENSE).
