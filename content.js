@@ -16,7 +16,7 @@ document.addEventListener('blur', async (e) => {
             }
         });
     }
-}, true); // Use capture phase to ensure we catch it
+}, true); 
 
 // SHA-1 Hashing Helper (Browser Native)
 async function sha1(str) {
@@ -26,9 +26,9 @@ async function sha1(str) {
     return hashArray.map(b => b.toString(16).padStart(2, '0')).join('').toUpperCase();
 }
 
-// Create and inject the Warning Overlay
+
 function showWarning(inputElement) {
-    // Remove existing warning if any
+    
     const existing = document.getElementById('pwn-warning-overlay');
     if (existing) existing.remove();
 
@@ -58,4 +58,5 @@ function showWarning(inputElement) {
     document.getElementById('pwn-ignore').addEventListener('click', () => {
         overlay.remove();
     });
+
 }
