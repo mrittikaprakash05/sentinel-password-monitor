@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             }
             sendResponse({ isPwned: isPwned });
         });
-        return true; // Keep the message channel open for async response
+        return true; 
     }
 });
 
@@ -16,7 +16,7 @@ async function checkPassword(prefix, suffix) {
         const text = await response.text();
         
         // The API returns lines like: SUFFIX:COUNT
-        // We look for our suffix in that list
+        
         const regex = new RegExp(`^${suffix}:`, "m");
         return regex.test(text);
     } catch (error) {
@@ -30,4 +30,5 @@ function updateStats() {
         const current = result.savedCount || 0;
         chrome.storage.local.set({ savedCount: current + 1 });
     });
+
 }
